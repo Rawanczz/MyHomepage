@@ -1,23 +1,74 @@
-<!DOCTYPE html>‍
-<html>‍
-<head>‍
-    <title>Welcome to My Homepage about SCM HomeWork1</title>‍
-</head>‍
-<body>‍
-    <h1>Welcome to My Homepage about SCM HomeWork1</h1>‍
-    <p>solve HW1 of SCM.</p>‍
-</body>‍
+<!-- Initial Commit: Basic homepage structure -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My Homepage about SCM HomeWork1</title>
+</head>
+<body>
+    <h1>Welcome to My Homepage about SCM HomeWork1</h1>
+    <p>solve HW1 of SCM.</p>
+</body>
 </html>
 
-With bug : 
-
-<!DOCTYPE html>‍
-<html>‍
-<head>‍
-    <title>Welcome to My Homepage about SCM HomeWork1</title>‍
-</head>‍
-<body>‍
-    <h1>Welcome to My Homepage about SCM HomeWork1</h1>‍
-    <p>solve HW1 of SCM.‍
-</body>‍
+<!-- Commit with Bug (missing closing tags) -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My Homepage about SCM HomeWork1</title>
+</head>
+<body>
+    <h1>Welcome to My Homepage about SCM HomeWork1
+        <!-- With bug: Missing closing </h1> tag -->
+    <p>solve HW1 of SCM.
+        <!-- With bug: Missing closing </p> tag -->
+</body>
 </html>
+
+<!-- Add navigation bar -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Bug Fix: -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to My Homepage about SCM HomeWork1</title>
+</head>
+<body>
+    <h1>Welcome to My Homepage about SCM HomeWork1</h1>
+    <p>solve HW1 of SCM.</p>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</body>
+</html>
+
+<!-- Git Commands -->
+
+git add index.html
+git commit -m "Initial commit: Basic homepage structure"
+git push origin main
+
+git add index.html
+git commit -m "Introduced bug: Missing closing </h1> and </p> tags"
+git push origin main
+
+git add index.html
+git commit -m "Added navigation bar to personalize the homepage"
+git push origin main
+
+git add index.html
+git commit -m "Fixed bug: Added missing closing </h1> and </p> tags"
+git push origin main
+
+git diff <initial_commit_hash> <feature_commit_hash> > comparison.txt
+git diff <bug_commit_hash> <bug_fix_commit_hash> >> comparison.txt
+
+git add comparison.txt
+git commit -m "Added comparison summary to reflect on changes"
+git push origin main
